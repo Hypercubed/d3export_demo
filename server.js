@@ -31,6 +31,10 @@ app.get('/', function (req, res)
 {
     res.render('index.html');
 });
+app.get('/vkbeautify.0.99.00.beta.js', function (req, res)
+{
+    res.sendfile('vkbeautify.0.99.00.beta.js');
+});
 app.post('/', function(req, res) {
 
     // output format (pdf or png )
